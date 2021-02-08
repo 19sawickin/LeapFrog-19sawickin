@@ -16,12 +16,14 @@ import cs15.prj.leapFrogSupport.SeekerSupport;
  */
 public class Hider extends HiderSupport {
 
+	//local variables declared
 	private CS15LilyPad _previousLilyPad;
 	private CS15Cloak _cloak;
 	private SeekerSupport _seeker;
 
 	/**
-	 * This is the Hider's constructor, which constructs an instance of the Hider.
+	 * This is the Hider's constructor, which constructs an instance of the Hider. It also
+	 * instantiates a lily pad, cloak, and seeker.
 	 */
 	public Hider() {
 		super();
@@ -32,7 +34,8 @@ public class Hider extends HiderSupport {
 	}
 
 	/**
-	 * This method is called automatically on each click.
+	 * This method is called automatically on each click. The hider moves to the new lily pad
+	 * that is clicked on and changes its color to match that lily pad.
 	 */
 	@Override
 	public void moveAndHide(CS15LilyPad newLilyPad) {
