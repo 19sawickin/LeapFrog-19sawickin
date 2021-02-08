@@ -3,6 +3,7 @@ package leapfrog;
 import cs15.prj.leapFrogSupport.CS15LilyPad;
 import cs15.prj.leapFrogSupport.HiderSupport;
 import cs15.prj.leapFrogSupport.CS15Cloak;
+import cs15.prj.leapFrogSupport.SeekerSupport;
 
 /**
  * Welcome to the Hider class! You should read all the commented hints, as well
@@ -24,6 +25,7 @@ public class Hider extends HiderSupport {
 	// of the hider's previous lily pad.
 	private CS15LilyPad _previousLilyPad;
 	private CS15Cloak _cloak;
+	private SeekerSupport _seeker;
 	//TODO STEP 4: Declare instance variable for cloak
 
 	/**
@@ -37,6 +39,7 @@ public class Hider extends HiderSupport {
 		_previousLilyPad = null;
 		_cloak = new CS15Cloak();
 		this.putOnCloak(_cloak);
+		_seeker = new Seeker(this);
 		
 		//TODO STEP 4: Initialize and put on the cloak
 	}
@@ -60,5 +63,8 @@ public class Hider extends HiderSupport {
 		//TODO STEP 4: Change the color of the cloak to match the lily pad
 	}
 
+	public CS15LilyPad getPreviousLilyPad() {
+		return _previousLilyPad;
+	}
 	//TODO 5: Create a getter method to get the previous lily pad
 }
