@@ -1,0 +1,19 @@
+README leapfrog
+
+HANDIN:
+Final
+
+DESIGN CHOICES:
+1. An instance of Game is contained in the App class which is what starts the game. Hider is contained
+within the Game class which allows a hider to be constructed, subsequently constructing a cloak,
+a lily pad, and a seeker (all of which are contained in the Hider class).
+
+2. Association was used in the Hider and Seeker classes. It was necessary so that the Seeker could
+communicate with the Hider and get the last lilypad that the seker was just on, since Hider already contained
+an instance of Seeker.
+
+KNOWN BUGS:
+
+
+HOURS:
+This program took me 3 hour to complete.
